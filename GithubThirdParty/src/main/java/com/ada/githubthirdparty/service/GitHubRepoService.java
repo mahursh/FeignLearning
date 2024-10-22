@@ -18,8 +18,11 @@ public class GitHubRepoService {
         this.repoRepository =  repoRepository;
     }
 
-    public void save(GitRepository repo){
-        repoRepository.save(repo);
+    public void save(String username){
+
+        List<GitRepository> repoList = gitHubClient.getUserRepos(username);
+        repoRepository.saveAll(repoList);
+
     }
 
     public List<GitRepository> findAll(){
