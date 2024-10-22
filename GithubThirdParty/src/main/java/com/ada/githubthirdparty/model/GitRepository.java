@@ -39,7 +39,7 @@ public class GitRepository {
     private String owner;
 
 
-//    private List<String> contributors;
+//    private List<User> contributors;
 
 
     @Column(name = "repo_watch")
