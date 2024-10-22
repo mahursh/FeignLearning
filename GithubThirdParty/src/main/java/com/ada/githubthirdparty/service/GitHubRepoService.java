@@ -21,7 +21,7 @@ public class GitHubRepoService {
     public void save(String username){
 
         List<GitRepository> repoList = gitHubClient.getUserRepos(username);
-        repoRepository.saveAll(repoList);
+//        repoRepository.saveAll(repoList);
 
     }
 
