@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -22,7 +23,7 @@ public class GitHubController {
 
 
 
-    public GitHubController(GitHubRepoService repoService , GitHubUserService userService , JoiningService joiningService){
+    public GitHubController(GitHubRepoService repoService, GitHubUserService userService, JoiningService joiningService) {
         this.repoService = repoService;
         this.userService = userService;
         this.joiningService = joiningService;
@@ -30,20 +31,27 @@ public class GitHubController {
     }
 
     @GetMapping("/repos/{username}")
-    public ResponseEntity<List<GitRepository>> getRepos(@PathVariable String username) {
-        List<GitRepository> repos = repoService.save(username);
+    public ResponseEntity<List<GitRepository>> getRepos(@PathVariable String username, @RequestParam(required = false) String forced) {
+
+        if (forced != null) {
+
+            List<GitRepository> repos = joiningService.save(username);
+            return ResponseEntity.ok(repos);
+        }
+        List<GitRepository> repos = joiningService.findReposByUsername(username);
+
         return ResponseEntity.ok(repos);
 
     }
 
     @GetMapping("/userInfo/{username}")
-    public ResponseEntity<User> getUserInfo(@PathVariable String username){
+    public ResponseEntity<User> getUserInfo(@PathVariable String username) {
         User user = userService.save(username);
         return ResponseEntity.ok(user);
     }
 
     @GetMapping("/join/{username}")
-    public ResponseEntity<List<GitRepository>> join(@PathVariable String username){
+    public ResponseEntity<List<GitRepository>> join(@PathVariable String username) {
         List<GitRepository> repos = joiningService.save(username);
         return ResponseEntity.ok(repos);
 

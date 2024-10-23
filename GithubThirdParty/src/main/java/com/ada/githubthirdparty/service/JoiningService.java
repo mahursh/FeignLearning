@@ -89,7 +89,7 @@ public class JoiningService {
 
 
 
-    public List<GitRepository> findAll(){
-        return repoRepository.findAll();
+    public List<GitRepository> findReposByUsername(String username){
+        return repoRepository.findGitRepositoriesByOwnerUsername(username);
     }
 }

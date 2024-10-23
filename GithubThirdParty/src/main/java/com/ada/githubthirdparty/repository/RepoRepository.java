@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -18,4 +19,6 @@ public interface RepoRepository extends JpaRepository< GitRepository ,Long > {
     void logicalRemove(Long id);
 
     Optional<GitRepository> findGitRepositoriesByRepoUUID(Long uuid);
+
+    List<GitRepository> findGitRepositoriesByOwnerUsername(String username);
 }
