@@ -1,6 +1,7 @@
 package com.ada.githubthirdparty.controller;
 
 import com.ada.githubthirdparty.model.GitRepository;
+import com.ada.githubthirdparty.model.User;
 import com.ada.githubthirdparty.service.GitHubRepoService;
 import com.ada.githubthirdparty.service.GitHubUserService;
 import org.springframework.http.ResponseEntity;
@@ -28,6 +29,12 @@ public class GitHubController {
         List<GitRepository> repos = repoService.save(username);
         return ResponseEntity.ok(repos);
 
+
     }
 
+    @GetMapping("/userInfo/{username}")
+    public ResponseEntity<User> getUserInfo(@PathVariable String username){
+        User user = userService.save(username);
+        return ResponseEntity.ok(user);
+    }
 }

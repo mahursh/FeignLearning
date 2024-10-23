@@ -30,16 +30,27 @@ public class User {
     private  String username;
 
     @Column(name = "user_name", columnDefinition = "NVARCHAR2(50)" )
-    @Pattern(regexp = "^[a-zA-Zآ-ی\\s]{3,50}$", message = "Invalid Company Name")
+//    @Pattern(regexp = "^[a-zA-Zآ-ی\\s]{3,50}$", message = "Invalid Company Name")
     private String name;
 
     @Column(name = "user_family", columnDefinition = "NVARCHAR2(50)" )
-    @Pattern(regexp = "^[a-zA-Zآ-ی\\s]{3,50}$", message = "Invalid Company Name")
+//    @Pattern(regexp = "^[a-zA-Zآ-ی\\s]{3,50}$", message = "Invalid Company Name")
     private String family;
 
 //    @OneToMany(cascade ={CascadeType.MERGE , CascadeType.PERSIST}, fetch = FetchType.LAZY)
 //    private List<GitRepository> repoList;
 
+    @Column(name = "user_company" , columnDefinition = "NVARCHAR2(50)")
+    private String company;
+
+    @Column(name = "user_location" ,columnDefinition = "NVARCHAR2(100)")
+    private String location;
+
+    @Column(name = "user_email" , columnDefinition = "NVARCHAR2(50)")
+    private String email;
+
+    @Column(name = "user_twitter" , columnDefinition = "NVARCHAR2(50)")
+    private String twitter;
 
     @Column(name = "user_deleted" , columnDefinition = "BOOLEAN DEFAULT FALSE")
     private boolean deleted = false;

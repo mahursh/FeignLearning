@@ -3,7 +3,13 @@ package com.ada.githubthirdparty.service;
 import com.ada.githubthirdparty.feign.GitHubClient;
 import com.ada.githubthirdparty.model.User;
 import com.ada.githubthirdparty.repository.UserRepository;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Service;
+
+
+import java.util.Map;
 
 @Service
 public class GitHubUserService {
@@ -17,7 +23,52 @@ public class GitHubUserService {
         this.userRepository = userRepository;
     }
 
-    public void save(User user){
-        userRepository.save(user);
+    public User save(String username){
+
+        Map<String ,Object > userInfo = githubClient.getUserInfo(username);
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        JsonNode userNode = objectMapper.convertValue(userInfo , JsonNode.class);
+
+        User user = new User();
+
+
+        if (userNode.has("login")){
+            user.setUsername(userNode.get("login").asText());
+        }
+
+        if(userNode.has("name")){
+            String fullName = userNode.get("name").asText();
+            String[] nameParts = fullName.split(" " , 2);
+
+
+            user.setName(nameParts[0]);
+            if (nameParts.length >1){
+                user.setFamily(nameParts[1]);
+            }else user.setFamily("");
+
+        }
+
+        if(userNode.has("company")){
+            user.setCompany(userNode.get("company").asText());
+        }
+
+        if(userNode.has("location")){
+            user.setLocation(userNode.get("location").asText());
+        }
+        if (userNode.has("email")){
+            user.setEmail(userNode.get("email").asText());
+        }
+        if (userNode.has("twitter_username")){
+            user.setTwitter(userNode.get("twitter_username").asText());
+        }
+
+        user.setDeleted(false);
+        return userRepository.save(user);
+
+
+
+
+
     }
 }

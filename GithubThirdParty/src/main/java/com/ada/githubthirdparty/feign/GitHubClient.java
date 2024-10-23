@@ -1,7 +1,7 @@
 package com.ada.githubthirdparty.feign;
 
 
-import com.ada.githubthirdparty.model.User;
+
 import org.springframework.cloud.openfeign.FeignClient;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,5 +17,5 @@ public interface GitHubClient {
     List<Map<String, Object>> getUserRepos(@PathVariable("username") String username);
 
     @GetMapping(value = "/users/{username}")
-    User getUserInfo(@PathVariable("username") String username);
+    Map<String , Object> getUserInfo(@PathVariable("username") String username);
 }
