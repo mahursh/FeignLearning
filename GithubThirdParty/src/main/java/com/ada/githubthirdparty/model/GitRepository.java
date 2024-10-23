@@ -1,6 +1,7 @@
 package com.ada.githubthirdparty.model;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -41,6 +42,7 @@ public class GitRepository {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "repo_owner", referencedColumnName = "user_username")
+    @JsonBackReference
     private User owner;
 
 

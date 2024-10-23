@@ -1,5 +1,6 @@
 package com.ada.githubthirdparty.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
@@ -35,7 +36,8 @@ public class User {
     @Column(name = "user_family", columnDefinition = "NVARCHAR2(50)" )
     private String family;
 
-    @OneToMany(cascade ={CascadeType.MERGE , CascadeType.PERSIST}, fetch = FetchType.LAZY, mappedBy = "owner")
+    @OneToMany( cascade = {CascadeType.MERGE, CascadeType.PERSIST},fetch = FetchType.LAZY, mappedBy = "owner")
+    @JsonManagedReference
     private List<GitRepository> repoList;
 
     @Column(name = "user_company" , columnDefinition = "NVARCHAR2(50)")
