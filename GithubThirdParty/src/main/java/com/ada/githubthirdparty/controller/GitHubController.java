@@ -41,7 +41,7 @@ public class GitHubController {
             return ResponseEntity.ok(repos);
         }
         List<GitRepository> repos = joiningService.findReposByUsername(username);
-        System.out.println("from cache ");
+        System.out.println("from database ");
 
         return ResponseEntity.ok(repos);
 

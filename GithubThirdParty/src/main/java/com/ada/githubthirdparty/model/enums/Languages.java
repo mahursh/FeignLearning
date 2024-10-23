@@ -16,6 +16,18 @@ public enum Languages {
     cobol,
     pascal,
     scss,
+    ruby,
+    swift,
+    sql,
+    aspnet,
+    xml,
+    julia,
+    rust,
+    shell,
+    r,
+    ts,
+    scala
+
 
 
 }
