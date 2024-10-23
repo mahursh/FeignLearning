@@ -27,10 +27,10 @@ public class GitRepository {
     @Column(name = "repo_id", nullable = false, unique = true)
     private Long id;
 
-    @Column(name = "repo_name", columnDefinition = "NVARCHAR2(50)")
+    @Column(name = "repo_name", columnDefinition = "NVARCHAR2(200)")
     private String name;
 
-    @Column(name = "repo_about", columnDefinition = "NVARCHAR2(100)")
+    @Column(name = "repo_about", columnDefinition = "NVARCHAR2(200)")
     private String about;
 
 //     @Column(name = "repo_owner" , columnDefinition = "NVARCHAR2(50)")

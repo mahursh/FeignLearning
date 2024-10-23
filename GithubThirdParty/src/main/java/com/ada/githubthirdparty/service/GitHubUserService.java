@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 
 import java.util.Map;
+import java.util.Optional;
 
 @Service
 public class GitHubUserService {
@@ -24,6 +25,13 @@ public class GitHubUserService {
     }
 
     public User save(String username){
+
+        Optional<User> existingUser = userRepository.findUserByUsername(username);
+
+        if (existingUser.isPresent()){
+            System.out.println("User Already Exist");
+          return existingUser.get();
+        }
 
         Map<String ,Object > userInfo = githubClient.getUserInfo(username);
         ObjectMapper objectMapper = new ObjectMapper();
