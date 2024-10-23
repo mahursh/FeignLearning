@@ -8,6 +8,14 @@ public enum Languages {
     js,
     es,
     html,
-    css
+    css,
+    go,
+    cpp,
+    c,
+    c_sharp,
+    cobol,
+    pascal,
+    scss,
+
 
 }

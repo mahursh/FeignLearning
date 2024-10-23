@@ -2,7 +2,6 @@ package com.ada.githubthirdparty.service;
 
 import com.ada.githubthirdparty.feign.GitHubClient;
 import com.ada.githubthirdparty.model.GitRepository;
-import com.ada.githubthirdparty.model.enums.Languages;
 import com.ada.githubthirdparty.repository.RepoRepository;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
