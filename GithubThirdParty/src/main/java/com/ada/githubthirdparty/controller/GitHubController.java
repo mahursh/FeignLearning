@@ -5,7 +5,6 @@ import com.ada.githubthirdparty.model.User;
 import com.ada.githubthirdparty.service.GitHubRepoService;
 import com.ada.githubthirdparty.service.GitHubUserService;
 import com.ada.githubthirdparty.service.JoiningService;
-import org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,14 +19,14 @@ public class GitHubController {
     private final GitHubRepoService repoService;
     private final GitHubUserService userService;
     private final JoiningService joiningService;
-    private final RestTemplateAutoConfiguration restTemplateAutoConfiguration;
 
 
-    public GitHubController(GitHubRepoService repoService , GitHubUserService userService , JoiningService joiningService, RestTemplateAutoConfiguration restTemplateAutoConfiguration){
+
+    public GitHubController(GitHubRepoService repoService , GitHubUserService userService , JoiningService joiningService){
         this.repoService = repoService;
         this.userService = userService;
         this.joiningService = joiningService;
-        this.restTemplateAutoConfiguration = restTemplateAutoConfiguration;
+
     }
 
     @GetMapping("/repos/{username}")

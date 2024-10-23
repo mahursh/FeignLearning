@@ -64,7 +64,7 @@ public class GitHubUserService {
         }
 
         user.setDeleted(false);
-        return userRepository.save(user);
+        return userRepository.saveAndFlush(user);
 
 
 

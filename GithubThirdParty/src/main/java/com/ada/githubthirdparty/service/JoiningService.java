@@ -11,12 +11,12 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 
+@SuppressWarnings("ALL")
 @Service
 public class JoiningService {
 
     private final GitHubClient gitHubClient;
     private final RepoRepository repoRepository;
-
     private final GitHubUserService gitHubUserService;
 
     public JoiningService(GitHubClient gitHubClient,RepoRepository repoRepository  , GitHubUserService gitHubUserService){
@@ -30,7 +30,6 @@ public class JoiningService {
 
 
         List<Map<String, Object>> repos = gitHubClient.getUserRepos(username);
-
         ObjectMapper objectMapper = new ObjectMapper();
 
         List<GitRepository> repoList = repos.stream().map(repo -> {
@@ -48,6 +47,8 @@ public class JoiningService {
             if (repoNode.has("owner") && repoNode.get("owner").has("login")) {
                 String ownerUsername = repoNode.get("owner").get("login").asText();
                 gitRepository.setOwner(gitHubUserService.save(ownerUsername));
+                System.out.println("owner set");
+
             }
 
             if (repoNode.has("watchers_count")) {
@@ -70,8 +71,16 @@ public class JoiningService {
             return gitRepository;
         }).toList();
 
-        return repoRepository.saveAll(repoList);
+        return repoRepository.saveAllAndFlush(repoList);
     }
+
+
+
+
+
+
+
+
 
     public List<GitRepository> findAll(){
         return repoRepository.findAll();
