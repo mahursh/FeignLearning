@@ -58,7 +58,7 @@ public class GitRepository {
 
 
 //    @ElementCollection(targetClass = Languages.class, fetch = FetchType.EAGER)
-//    @CollectionTable(name = "languages")
+//    @CollectionTable(name = "languages_tbl")
 //    @Column(name = "repo_lang")
 //    @Enumerated(EnumType.STRING)
 //    private Set<Languages> languages = new HashSet<>();
