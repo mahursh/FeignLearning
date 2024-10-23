@@ -30,15 +30,13 @@ public class User {
     private  String username;
 
     @Column(name = "user_name", columnDefinition = "NVARCHAR2(50)" )
-//    @Pattern(regexp = "^[a-zA-Zآ-ی\\s]{3,50}$", message = "Invalid Company Name")
     private String name;
 
     @Column(name = "user_family", columnDefinition = "NVARCHAR2(50)" )
-//    @Pattern(regexp = "^[a-zA-Zآ-ی\\s]{3,50}$", message = "Invalid Company Name")
     private String family;
 
-//    @OneToMany(cascade ={CascadeType.MERGE , CascadeType.PERSIST}, fetch = FetchType.LAZY)
-//    private List<GitRepository> repoList;
+    @OneToMany(cascade ={CascadeType.MERGE , CascadeType.PERSIST}, fetch = FetchType.LAZY, mappedBy = "owner")
+    private List<GitRepository> repoList;
 
     @Column(name = "user_company" , columnDefinition = "NVARCHAR2(50)")
     private String company;

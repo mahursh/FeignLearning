@@ -2,6 +2,7 @@ package com.ada.githubthirdparty.service;
 
 import com.ada.githubthirdparty.feign.GitHubClient;
 import com.ada.githubthirdparty.model.GitRepository;
+import com.ada.githubthirdparty.model.User;
 import com.ada.githubthirdparty.repository.RepoRepository;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -26,6 +27,7 @@ public class GitHubRepoService {
 
     public List<GitRepository> save(String username){
 
+
         List<Map<String, Object>> repos = gitHubClient.getUserRepos(username);
 
         ObjectMapper objectMapper = new ObjectMapper();
@@ -42,9 +44,9 @@ public class GitHubRepoService {
                 gitRepository.setAbout(repoNode.get("description").asText());
             }
 
-            if (repoNode.has("owner") && repoNode.get("owner").has("login")) {
-                gitRepository.setOwner(repoNode.get("owner").get("login").asText());
-            }
+//            if (repoNode.has("owner") && repoNode.get("owner").has("login")) {
+//                gitRepository.setOwner(repoNode.get("owner").get("login").asText());
+//            }
 
             if (repoNode.has("watchers_count")) {
                 gitRepository.setWatchingNo(repoNode.get("watchers_count").asInt());

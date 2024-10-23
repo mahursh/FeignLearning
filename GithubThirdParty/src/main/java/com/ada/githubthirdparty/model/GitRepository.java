@@ -30,23 +30,27 @@ public class GitRepository {
     @Column(name = "repo_name", columnDefinition = "NVARCHAR2(50)")
     private String name;
 
-    @Column(name = "repo_about", columnDefinition = "NVARCHAR2")
+    @Column(name = "repo_about", columnDefinition = "NVARCHAR2(100)")
     private String about;
 
+//     @Column(name = "repo_owner" , columnDefinition = "NVARCHAR2(50)")
+//     private String owner;
 
-    private String owner;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "repo_owner", referencedColumnName = "username")
+    private User owner;
 
 
 //    private List<User> contributors;
 
 
-    @Column(name = "repo_watch")
+    @Column(name = "repo_watch" ,columnDefinition = "NUMBER(4)")
     private int watchingNo;
 
-    @Column(name = "repo_stars")
+    @Column(name = "repo_stars",columnDefinition = "NUMBER(4)")
     private int starsNo;
 
-    @Column(name = "repo_fork")
+    @Column(name = "repo_fork",columnDefinition = "NUMBER(4)")
     private int forkNo;
 
 
