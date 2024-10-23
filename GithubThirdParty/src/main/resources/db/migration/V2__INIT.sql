@@ -17,6 +17,7 @@ CREATE SEQUENCE user_seq START WITH 1 INCREMENT BY 1;
 CREATE TABLE git_repo_tbl
 (
     repo_id      NUMBER PRIMARY KEY,
+    repo_uuid    NUMBER UNIQUE ,
     repo_name    NVARCHAR2(200),
     repo_about   NVARCHAR2(200),
     repo_owner   NVARCHAR2(50),

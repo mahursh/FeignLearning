@@ -30,12 +30,24 @@ public class JoiningService {
     public List<GitRepository> save(String username){
 
         List<Map<String, Object>> repos = gitHubClient.getUserRepos(username);
+
         ObjectMapper objectMapper = new ObjectMapper();
 
         List<GitRepository> repoList = repos.stream().map(repo -> {
 
             JsonNode repoNode = objectMapper.convertValue(repo, JsonNode.class);
             GitRepository gitRepository = new GitRepository();
+
+
+            if (repoNode.has("id")){
+                Long repoId = repoNode.get("id").asLong();
+                Optional<GitRepository> existingRepo = repoRepository.findGitRepositoriesByRepoUUID(repoId);
+                if (existingRepo.isPresent()){
+                    System.out.println("Repo Already Exist");
+                    return existingRepo.get();
+                }
+                gitRepository.setRepoUUID(repoId);
+            }
 
             if (repoNode.has("name")) {
                 gitRepository.setName(repoNode.get("name").asText());

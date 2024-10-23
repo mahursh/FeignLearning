@@ -27,6 +27,9 @@ public class GitRepository {
     @Column(name = "repo_id", nullable = false, unique = true)
     private Long id;
 
+    @Column(name = "repo_uuid" ,nullable = false , unique = true)
+    private Long repoUUID;
+
     @Column(name = "repo_name", columnDefinition = "NVARCHAR2(200)")
     private String name;
 
