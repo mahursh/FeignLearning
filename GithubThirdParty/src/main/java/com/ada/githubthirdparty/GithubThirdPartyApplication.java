@@ -6,7 +6,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 
 @SpringBootApplication
-@EnableFeignClients()
+@EnableFeignClients
 
 public class GithubThirdPartyApplication {
 

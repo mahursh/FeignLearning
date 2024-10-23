@@ -1,10 +1,15 @@
 package com.ada.githubthirdparty.controller;
 
+import com.ada.githubthirdparty.model.GitRepository;
 import com.ada.githubthirdparty.service.GitHubRepoService;
 import com.ada.githubthirdparty.service.GitHubUserService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 public class GitHubController {
@@ -19,10 +24,10 @@ public class GitHubController {
     }
 
     @GetMapping("/repos/{username}")
-    public String saveRepos(@PathVariable("username") String username){
-        repoService.save(username);
-        return "saved ";
-    }
+    public ResponseEntity<List<GitRepository>> getRepos(@PathVariable String username) {
+        List<GitRepository> repos = repoService.save(username);
+        return ResponseEntity.ok(repos);
 
+    }
 
 }

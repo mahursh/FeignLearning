@@ -37,11 +37,11 @@ public class User {
     @Pattern(regexp = "^[a-zA-Zآ-ی\\s]{3,50}$", message = "Invalid Company Name")
     private String family;
 
-    @OneToMany(cascade ={CascadeType.MERGE , CascadeType.PERSIST}, fetch = FetchType.LAZY)
-    private List<GitRepository> repoList;
+//    @OneToMany(cascade ={CascadeType.MERGE , CascadeType.PERSIST}, fetch = FetchType.LAZY)
+//    private List<GitRepository> repoList;
 
 
-    @Column(name = "user_deleted")
+    @Column(name = "user_deleted" , columnDefinition = "BOOLEAN DEFAULT FALSE")
     private boolean deleted = false;
 
 
