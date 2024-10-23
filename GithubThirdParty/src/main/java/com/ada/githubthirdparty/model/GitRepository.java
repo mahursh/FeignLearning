@@ -37,7 +37,7 @@ public class GitRepository {
 //     private String owner;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "repo_owner", referencedColumnName = "username")
+    @JoinColumn(name = "repo_owner", referencedColumnName = "user_username")
     private User owner;
 
 
