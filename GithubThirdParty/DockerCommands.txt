@@ -1,0 +1,49 @@
+docker login
+
+
+docker login -u mahurshams94@gmail.com
+
+
+docker build -t github-third-party
+
+
+docker images
+
+
+run -d --name github-third-party-app -p 80:80 github-third-party
+
+
+docker ps
+
+
+docker logs github-third-party-app
+
+
+docker stop github-third-party-app
+
+
+docker rm github-third-party-app
+
+
+docker ps -a
+
+
+run -d --name github-third-party-app -p 80:80 github-third-party
+
+
+docker ps
+
+
+docker images
+
+docker-compose build
+
+
+docker-compose up
+
+docker-compose down
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
