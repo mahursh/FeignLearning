@@ -1,4 +1,4 @@
-version: '27.2.0'
+version: '3.8'
 services:
 
 
@@ -39,5 +39,6 @@ services:
 
 
 
-  networks:
-    my-network:
+networks:
+  my-network:
+    external: true
