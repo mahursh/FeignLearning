@@ -1,0 +1,43 @@
+version: '27.2.0'
+services:
+
+
+#  docker run -d \
+#  --name my-oracle-db \
+#  --network my-network \
+#  -p 1521:1521 \
+#  -e ORACLE_SID=ORCL \
+#  -e ORACLE_PWD=kar_amooz \
+#  oracle/database:19.3.0-ee
+
+  oracle-db:
+    image: oracle/database:19.3.0-ee
+    environment:
+      ORACLE_SID: ORCL
+      ORACLE_PWD: kar_amooz
+    ports:
+      - "1521:1521"
+
+
+
+
+
+  my-app:
+    build: .
+    ports:
+    - "80:80"
+
+    depends_on:
+      - oracle-db
+
+
+
+#   docker network create my-network
+    networks:
+      - my-network
+
+
+
+
+  networks:
+    my-network:

@@ -1,0 +1,31 @@
+
+FROM maven:3.9.4-eclipse-temurin-17 AS build
+
+
+WORKDIR /app
+
+
+COPY pom.xml .
+COPY src ./src
+#COPY path/to/ojdbc11.jar /app/lib/
+
+RUN mvn clean package -DskipTests
+
+
+
+
+FROM eclipse-temurin:17-jre
+
+
+WORKDIR /app
+
+
+COPY --from=build /app/target/GithubThirdParty-0.0.1-SNAPSHOT.jar app.jar
+#COPY --from=build /app/lib/ojdbc11.jar /app/lib/
+
+
+EXPOSE 80
+
+
+ENTRYPOINT ["java", "-jar", "app.jar"]
+#ENTRYPOINT ["java", "-cp", "app.jar:lib/ojdbc11.jar", "com.ada.githubthirdparty.GithubThirdPartyApplication"]

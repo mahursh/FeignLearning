@@ -12,6 +12,7 @@
     <artifactId>GithubThirdParty</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>GithubThirdParty</name>
+    <packaging>jar</packaging>
     <description>GithubThirdParty</description>
     <url/>
     <licenses>
