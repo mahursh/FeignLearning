@@ -48,3 +48,21 @@ docker-compose down
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
+# What dose ONBUILD do?
+
+RUN mvn dependency:go-offline -B
+
+RUN mvn dependency:resolve
+
+
+RUN mvn dependency:go-offline
+
+RUN mvn -f ./src
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+docker run -d --name github-third-party-app -p 8080:8080 github-third-party
+Breakdown of the Command:
+-d: Runs the container in detached mode (in the background).
+--name github-third-party-app: Assigns a name to your running container.
+-p 8080:8080: Maps port 8080 on your local machine to port 8080 on the container (adjust these as necessary based on your app's port).
+github-third-party: Specifies the name of the image to run.
