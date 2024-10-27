@@ -40,12 +40,16 @@ public class JoiningService {
 
 
             if (repoNode.has("id")){
+
                 Long repoId = repoNode.get("id").asLong();
+
                 Optional<GitRepository> existingRepo = repoRepository.findGitRepositoriesByRepoUUID(repoId);
+
                 if (existingRepo.isPresent()){
+
                     System.out.println("Repo Already Exist");
                     return existingRepo.get();
-//                    return null;
+
                 }
                 gitRepository.setRepoUUID(repoId);
             }
