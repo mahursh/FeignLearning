@@ -6,10 +6,14 @@ WORKDIR /app
 
 
 COPY pom.xml .
-COPY src ./src
 #COPY src/main/resources/META-INF/lib/ojdbc11-21.9.0.0.jar /app/lib/
 
+RUN mvn dependency:resolve
+
+COPY src ./src
+
 RUN mvn clean package -DskipTests
+
 
 
 
