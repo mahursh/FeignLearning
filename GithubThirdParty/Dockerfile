@@ -7,7 +7,7 @@ WORKDIR /app
 
 COPY pom.xml .
 COPY src ./src
-COPY src/main/resources/META-INF/lib/ojdbc11-21.9.0.0.jar /app/lib/
+#COPY src/main/resources/META-INF/lib/ojdbc11-21.9.0.0.jar /app/lib/
 
 RUN mvn clean package -DskipTests
 
@@ -21,11 +21,11 @@ WORKDIR /app
 
 
 COPY --from=build /app/target/GithubThirdParty-0.0.1-SNAPSHOT.jar app.jar
-COPY --from=build /app/lib/ojdbc11-21.9.0.0.jar /app/lib/
+#COPY --from=build /app/lib/ojdbc11-21.9.0.0.jar /app/lib/
 
 
 EXPOSE 80
 
 
-#ENTRYPOINT ["java", "-jar", "app.jar"]
-ENTRYPOINT ["java", "-cp", "app.jar:lib/ojdbc11.jar", "com.ada.githubthirdparty.GithubThirdPartyApplication"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
+#ENTRYPOINT ["java", "-cp", "app.jar:lib/ojdbc11.jar", "com.ada.githubthirdparty.GithubThirdPartyApplication"]

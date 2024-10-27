@@ -4,7 +4,8 @@ docker login
 docker login -u mahurshams94@gmail.com
 
 
-docker build -t github-third-party
+docker build -t github-third-party .
+docker run -p 80:80 github-third-party
 
 
 docker images
