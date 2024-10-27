@@ -29,7 +29,6 @@ public class GitHubRepoService {
 
 
         List<Map<String, Object>> repos = gitHubClient.getUserRepos(username);
-
         ObjectMapper objectMapper = new ObjectMapper();
 
         List<GitRepository> repoList = repos.stream().map(repo -> {

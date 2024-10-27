@@ -32,7 +32,8 @@ docker ps -a
 run -d --name github-third-party-app -p 80:80 github-third-party
 
 
-docker ps
+docker ps (shows active containers)
+docker ps -a   (shows all containers)
 
 
 docker images
@@ -44,7 +45,7 @@ docker-compose up
 
 docker-compose down
 
-
+docker rename my_container my_new_container  (to rename my container)
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
