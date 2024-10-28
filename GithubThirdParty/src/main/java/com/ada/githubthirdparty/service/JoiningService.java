@@ -64,7 +64,6 @@ public class JoiningService {
             if (repoNode.has("owner") && repoNode.get("owner").has("login")) {
                 String ownerUsername = repoNode.get("owner").get("login").asText();
                 gitRepository.setOwner(gitHubUserService.save(ownerUsername));
-                System.out.println("owner set");
             }
 
             if (repoNode.has("watchers_count")) {
