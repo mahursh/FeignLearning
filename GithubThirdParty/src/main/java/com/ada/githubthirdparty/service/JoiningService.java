@@ -47,7 +47,6 @@ public class JoiningService {
 
                 if (existingRepo.isPresent()){
 
-                    System.out.println("Repo Already Exist");
                     return existingRepo.get();
 
                 }

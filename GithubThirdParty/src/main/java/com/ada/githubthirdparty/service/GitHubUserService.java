@@ -29,9 +29,8 @@ public class GitHubUserService {
         Optional<User> existingUser = userRepository.findUserByUsername(username);
 
         if (existingUser.isPresent()){
-            System.out.println("User Already Exist");
           return existingUser.get();
-//          return null;
+
         }
 
         Map<String ,Object > userInfo = githubClient.getUserInfo(username);
