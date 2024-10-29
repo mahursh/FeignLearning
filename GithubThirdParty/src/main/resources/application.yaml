@@ -20,17 +20,20 @@ spring:
 server:
   port: 80
 
-logging:
-  level:
-    root: info
-    org:
-      springframework:
-        web: debug
 
-  file:
-    name: logs/application.log
+#+++++++++++++++++++++++++++++++++++++++++
 
-  pattern:
-    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
-    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+#logging:
+#  level:
+#    root: info
+#    org:
+#      springframework:
+#        web: debug
+#
+#  file:
+#    name: logs/application.log
+
+#  pattern:
+#    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+#    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
 
