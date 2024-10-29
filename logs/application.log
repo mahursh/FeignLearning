@@ -1,0 +1,793 @@
+2024-10-29 09:54:55 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Starting GithubThirdPartyApplication using Java 21.0.5 with PID 6316 (C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning\GithubThirdParty\target\classes started by m.shams in C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning)
+2024-10-29 09:54:55 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-29 09:54:55 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\m.shams\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/m.shams/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-10-29 09:54:55 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-29 09:54:55 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-29 09:54:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-29 09:54:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83 ms. Found 4 JPA repository interfaces.
+2024-10-29 09:54:57 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=8af9d755-eb3b-3cf6-82a4-101249793f9d
+2024-10-29 09:54:57 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-10-29 09:54:57 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-29 09:54:57 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-29 09:54:57 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-29 09:54:57 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2311 ms
+2024-10-29 09:54:58 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-29 09:54:58 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@51257cb5
+2024-10-29 09:54:58 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-29 09:54:58 [restartedMain] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:oracle:thin:@172.16.60.65:1521:ORCL (Oracle 19.0)
+2024-10-29 09:54:59 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.375s)
+2024-10-29 09:54:59 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "KAR_AMOOZ": 2
+2024-10-29 09:54:59 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "KAR_AMOOZ" is up to date. No migration necessary.
+2024-10-29 09:54:59 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-29 09:54:59 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-29 09:55:00 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-29 09:55:00 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-29 09:55:02 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-29 09:55:02 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 09:55:02 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-29 09:55:02 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-29 09:55:02 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-29 09:55:03 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2024-10-29 09:55:03 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-29 09:55:03 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-29 09:55:03 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-29 09:55:03 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-10-29 09:55:04 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-10-29 09:55:05 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Started GithubThirdPartyApplication in 11.802 seconds (process running for 13.294)
+2024-10-29 09:55:24 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-29 09:55:24 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-29 09:55:24 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-10-29 09:55:24 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-10-29 09:55:24 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-10-29 09:55:24 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5421d9ac
+2024-10-29 09:55:24 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@66d5f66e
+2024-10-29 09:55:24 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-10-29 09:55:24 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-10-29 09:55:24 [http-nio-80-exec-1] INFO  c.a.logginglib.filter.LoggingFilter - [34m<-----------------------------------ISO 27001 SERVICE CALL----------------------------------->
+REQUEST:
+	URL: /repos/mahursh
+	HTTP METHOD: GET
+	HEADER: {
+  "sec-fetch-mode" : "navigate",
+  "sec-fetch-site" : "none",
+  "accept-language" : "en-US,en;q=0.9",
+  "purpose" : "prefetch",
+  "sec-fetch-user" : "?1",
+  "accept" : "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "sec-ch-ua" : "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+  "sec-ch-ua-mobile" : "?0",
+  "sec-ch-ua-platform" : "\"Windows\"",
+  "host" : "localhost",
+  "upgrade-insecure-requests" : "1",
+  "connection" : "keep-alive",
+  "accept-encoding" : "gzip, deflate, br, zstd",
+  "user-agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+  "sec-purpose" : "prefetch;prerender",
+  "sec-fetch-dest" : "document"
+}
+<-------------------------------------------------------------------------------------------->
+[0m
+2024-10-29 09:55:24 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/repos/mahursh?forced=true", parameters={masked}
+2024-10-29 09:55:24 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ada.githubthirdparty.controller.GitHubController#getRepos(String, String)
+2024-10-29 09:55:25 [http-nio-80-exec-1] DEBUG o.s.w.c.HttpMessageConverterExtractor - Reading to [java.util.List<java.util.Map<java.lang.String, java.lang.Object>>]
+2024-10-29 09:55:26 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-10-29 09:55:26 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.ada.githubthirdparty.model.GitRepository@6dd17693, com.ada.githubthirdparty.model.GitRepository (truncated)...]
+2024-10-29 09:55:26 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Failed to complete request: org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class java.time.LocalDate]
+2024-10-29 09:55:26 [http-nio-80-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class java.time.LocalDate]] with root cause
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: java.util.ArrayList[0]->com.ada.githubthirdparty.model.GitRepository["publishYear"])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1330)
+	at com.fasterxml.jackson.databind.ser.impl.UnsupportedTypeSerializer.serialize(UnsupportedTypeSerializer.java:35)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:770)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:183)
+	at com.fasterxml.jackson.databind.ser.std.CollectionSerializer.serializeContents(CollectionSerializer.java:145)
+	at com.fasterxml.jackson.databind.ser.std.CollectionSerializer.serialize(CollectionSerializer.java:107)
+	at com.fasterxml.jackson.databind.ser.std.CollectionSerializer.serialize(CollectionSerializer.java:25)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:422)
+	at com.fasterxml.jackson.databind.ObjectWriter$Prefetch.serialize(ObjectWriter.java:1570)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1061)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:483)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:114)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:297)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:245)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.ada.logginglib.filter.LoggingFilter.doFilter(LoggingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-10-29 09:55:26 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error?forced=true", parameters={masked}
+2024-10-29 09:55:26 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2024-10-29 09:55:26 [http-nio-80-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+2024-10-29 09:55:26 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 500
+2024-10-29 09:55:27 [http-nio-80-exec-2] INFO  c.a.logginglib.filter.LoggingFilter - [34m<-----------------------------------ISO 27001 SERVICE CALL----------------------------------->
+REQUEST:
+	URL: /repos/mahursh
+	HTTP METHOD: GET
+	HEADER: {
+  "sec-fetch-mode" : "navigate",
+  "sec-fetch-site" : "none",
+  "accept-language" : "en-US,en;q=0.9",
+  "sec-fetch-user" : "?1",
+  "accept" : "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "sec-ch-ua" : "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+  "sec-ch-ua-mobile" : "?0",
+  "sec-ch-ua-platform" : "\"Windows\"",
+  "host" : "localhost",
+  "upgrade-insecure-requests" : "1",
+  "connection" : "keep-alive",
+  "accept-encoding" : "gzip, deflate, br, zstd",
+  "user-agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+  "sec-fetch-dest" : "document"
+}
+<-------------------------------------------------------------------------------------------->
+[0m
+2024-10-29 09:55:27 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/repos/mahursh?forced=true", parameters={masked}
+2024-10-29 09:55:27 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ada.githubthirdparty.controller.GitHubController#getRepos(String, String)
+2024-10-29 09:55:27 [http-nio-80-exec-2] DEBUG o.s.w.c.HttpMessageConverterExtractor - Reading to [java.util.List<java.util.Map<java.lang.String, java.lang.Object>>]
+2024-10-29 09:55:27 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-10-29 09:55:27 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.ada.githubthirdparty.model.GitRepository@71285b61, com.ada.githubthirdparty.model.GitRepository (truncated)...]
+2024-10-29 09:55:27 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Failed to complete request: org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class java.time.LocalDate]
+2024-10-29 09:55:27 [http-nio-80-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class java.time.LocalDate]] with root cause
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: java.util.ArrayList[0]->com.ada.githubthirdparty.model.GitRepository["publishYear"])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1330)
+	at com.fasterxml.jackson.databind.ser.impl.UnsupportedTypeSerializer.serialize(UnsupportedTypeSerializer.java:35)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:770)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:183)
+	at com.fasterxml.jackson.databind.ser.std.CollectionSerializer.serializeContents(CollectionSerializer.java:145)
+	at com.fasterxml.jackson.databind.ser.std.CollectionSerializer.serialize(CollectionSerializer.java:107)
+	at com.fasterxml.jackson.databind.ser.std.CollectionSerializer.serialize(CollectionSerializer.java:25)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:422)
+	at com.fasterxml.jackson.databind.ObjectWriter$Prefetch.serialize(ObjectWriter.java:1570)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1061)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:483)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:114)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:297)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:245)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.ada.logginglib.filter.LoggingFilter.doFilter(LoggingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-10-29 09:55:27 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error?forced=true", parameters={masked}
+2024-10-29 09:55:27 [http-nio-80-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2024-10-29 09:55:27 [http-nio-80-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+2024-10-29 09:55:27 [http-nio-80-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 500
+2024-10-29 09:55:28 [http-nio-80-exec-3] INFO  c.a.logginglib.filter.LoggingFilter - [34m<-----------------------------------ISO 27001 SERVICE CALL----------------------------------->
+REQUEST:
+	URL: /favicon.ico
+	HTTP METHOD: GET
+	HEADER: {
+  "sec-fetch-mode" : "no-cors",
+  "referer" : "http://localhost/repos/mahursh?forced=true",
+  "sec-fetch-site" : "same-origin",
+  "accept-language" : "en-US,en;q=0.9",
+  "accept" : "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+  "sec-ch-ua" : "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+  "sec-ch-ua-mobile" : "?0",
+  "sec-ch-ua-platform" : "\"Windows\"",
+  "host" : "localhost",
+  "connection" : "keep-alive",
+  "accept-encoding" : "gzip, deflate, br, zstd",
+  "user-agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+  "sec-fetch-dest" : "image"
+}
+<-------------------------------------------------------------------------------------------->
+[0m
+2024-10-29 09:55:28 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
+2024-10-29 09:55:28 [http-nio-80-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-10-29 09:55:28 [http-nio-80-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2024-10-29 09:55:28 [http-nio-80-exec-3] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-10-29 09:55:28 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2024-10-29 09:55:28 [http-nio-80-exec-3] INFO  c.a.logginglib.filter.LoggingFilter - [34m<-----------------------------------ISO 27001 SERVICE END----------------------------------->
+RESPONSE:
+	URL: /favicon.ico
+	HTTP METHOD: GET
+	HTTP STATUS: 404
+	DURATION: 13 ms
+<------------------------------------------------------------------------------------------->
+[0m
+2024-10-29 09:55:28 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2024-10-29 09:55:28 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-10-29 09:55:28 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-10-29 09:55:28 [http-nio-80-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Oct 29 09:55:28 GMT+03:30 2024, status=404, error=Not Found, trace=org.springframewor (truncated)...]
+2024-10-29 09:55:28 [http-nio-80-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2024-10-29 10:08:29 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:08:29 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-29 10:08:29 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-29 10:20:03 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Starting GithubThirdPartyApplication using Java 21.0.5 with PID 4804 (C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning\GithubThirdParty\target\classes started by m.shams in C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning)
+2024-10-29 10:20:03 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-29 10:20:03 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\m.shams\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/m.shams/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-10-29 10:20:03 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-29 10:20:03 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-29 10:20:04 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-29 10:20:04 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83 ms. Found 4 JPA repository interfaces.
+2024-10-29 10:20:04 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=9c37543a-f083-33ab-8f2f-de8ea404235b
+2024-10-29 10:20:05 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-10-29 10:20:05 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-29 10:20:05 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-29 10:20:05 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-29 10:20:05 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2138 ms
+2024-10-29 10:20:05 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-29 10:20:06 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@12e2800b
+2024-10-29 10:20:06 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-29 10:20:06 [restartedMain] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:oracle:thin:@172.16.60.65:1521:ORCL (Oracle 19.0)
+2024-10-29 10:20:06 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.058s)
+2024-10-29 10:20:06 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "KAR_AMOOZ": 2
+2024-10-29 10:20:06 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "KAR_AMOOZ" is up to date. No migration necessary.
+2024-10-29 10:20:06 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-29 10:20:06 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-29 10:20:06 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-29 10:20:07 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-29 10:20:08 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-29 10:20:08 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:20:08 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-29 10:20:08 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-29 10:20:09 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-29 10:20:10 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2024-10-29 10:20:10 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-29 10:20:10 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-29 10:20:10 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-29 10:20:10 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-10-29 10:20:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-10-29 10:20:12 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Started GithubThirdPartyApplication in 10.705 seconds (process running for 11.678)
+2024-10-29 10:20:23 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-29 10:20:23 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-29 10:20:23 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-10-29 10:20:23 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-10-29 10:20:23 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-10-29 10:20:23 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5993d8df
+2024-10-29 10:20:23 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6c0980ab
+2024-10-29 10:20:23 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-10-29 10:20:23 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-10-29 10:20:23 [http-nio-80-exec-1] INFO  c.a.logginglib.filter.LoggingFilter - [34m<-----------------------------------ISO 27001 SERVICE CALL----------------------------------->
+REQUEST:
+	URL: /repos/mahursh
+	HTTP METHOD: GET
+	HEADER: {
+  "sec-fetch-mode" : "navigate",
+  "sec-fetch-site" : "none",
+  "accept-language" : "en-US,en;q=0.9",
+  "sec-fetch-user" : "?1",
+  "accept" : "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "sec-ch-ua" : "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+  "sec-ch-ua-mobile" : "?0",
+  "sec-ch-ua-platform" : "\"Windows\"",
+  "host" : "localhost",
+  "upgrade-insecure-requests" : "1",
+  "connection" : "keep-alive",
+  "cache-control" : "max-age=0",
+  "accept-encoding" : "gzip, deflate, br, zstd",
+  "user-agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+  "sec-fetch-dest" : "document"
+}
+<-------------------------------------------------------------------------------------------->
+[0m
+2024-10-29 10:20:23 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/repos/mahursh?forced=true", parameters={masked}
+2024-10-29 10:20:23 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ada.githubthirdparty.controller.GitHubController#getRepos(String, String)
+2024-10-29 10:20:24 [http-nio-80-exec-1] DEBUG o.s.w.c.HttpMessageConverterExtractor - Reading to [java.util.List<java.util.Map<java.lang.String, java.lang.Object>>]
+2024-10-29 10:20:25 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-10-29 10:20:25 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.ada.githubthirdparty.model.GitRepository@b4a71c0, com.ada.githubthirdparty.model.GitRepository@ (truncated)...]
+2024-10-29 10:20:25 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-10-29 10:20:25 [http-nio-80-exec-1] INFO  c.a.logginglib.filter.LoggingFilter - [34m<-----------------------------------ISO 27001 SERVICE END----------------------------------->
+RESPONSE:
+	URL: /repos/mahursh
+	HTTP METHOD: GET
+	HTTP STATUS: 200
+	DURATION: 1839 ms
+<------------------------------------------------------------------------------------------->
+[0m
+2024-10-29 10:25:05 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-10-29 10:25:05 [Thread-8] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:25:05 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-29 10:25:05 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-29 10:25:06 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Starting GithubThirdPartyApplication using Java 21.0.5 with PID 4804 (C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning\GithubThirdParty\target\classes started by m.shams in C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning)
+2024-10-29 10:25:06 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-29 10:25:07 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-29 10:25:07 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 4 JPA repository interfaces.
+2024-10-29 10:25:07 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=12bcb112-5de0-381b-8980-f7360e81b273
+2024-10-29 10:25:07 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-10-29 10:25:07 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-29 10:25:07 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-29 10:25:07 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-29 10:25:07 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 716 ms
+2024-10-29 10:25:07 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-10-29 10:25:07 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection oracle.jdbc.driver.T4CConnection@83e5f04
+2024-10-29 10:25:07 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-10-29 10:25:07 [restartedMain] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:oracle:thin:@172.16.60.65:1521:ORCL (Oracle 19.0)
+2024-10-29 10:25:07 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.024s)
+2024-10-29 10:25:07 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "KAR_AMOOZ": 2
+2024-10-29 10:25:07 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "KAR_AMOOZ" is up to date. No migration necessary.
+2024-10-29 10:25:07 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-29 10:25:07 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-29 10:25:07 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-29 10:25:08 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-29 10:25:08 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:25:08 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-29 10:25:08 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-29 10:25:08 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2024-10-29 10:25:08 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-29 10:25:08 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-29 10:25:08 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-29 10:25:08 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-10-29 10:25:09 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-10-29 10:25:10 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-10-29 10:25:10 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Started GithubThirdPartyApplication in 4.706 seconds (process running for 309.861)
+2024-10-29 10:25:10 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-10-29 10:25:10 [Thread-13] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:25:10 [Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-10-29 10:25:10 [Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-10-29 10:25:11 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Starting GithubThirdPartyApplication using Java 21.0.5 with PID 4804 (C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning\GithubThirdParty\target\classes started by m.shams in C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning)
+2024-10-29 10:25:11 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-29 10:25:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-29 10:25:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 4 JPA repository interfaces.
+2024-10-29 10:25:11 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=9c37543a-f083-33ab-8f2f-de8ea404235b
+2024-10-29 10:25:12 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-10-29 10:25:12 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-29 10:25:12 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-29 10:25:12 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-29 10:25:12 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 639 ms
+2024-10-29 10:25:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2024-10-29 10:25:12 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection oracle.jdbc.driver.T4CConnection@5f7fc31
+2024-10-29 10:25:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2024-10-29 10:25:12 [restartedMain] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:oracle:thin:@172.16.60.65:1521:ORCL (Oracle 19.0)
+2024-10-29 10:25:12 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.021s)
+2024-10-29 10:25:12 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "KAR_AMOOZ": 2
+2024-10-29 10:25:12 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "KAR_AMOOZ" is up to date. No migration necessary.
+2024-10-29 10:25:12 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-29 10:25:12 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-29 10:25:12 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-29 10:25:13 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-29 10:25:13 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:25:13 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-29 10:25:13 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-29 10:25:13 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2024-10-29 10:25:13 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-29 10:25:13 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-29 10:25:13 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-29 10:25:13 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-10-29 10:25:14 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-10-29 10:25:15 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Started GithubThirdPartyApplication in 4.499 seconds (process running for 314.521)
+2024-10-29 10:25:15 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-10-29 10:25:57 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:25:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-10-29 10:25:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2024-10-29 10:26:04 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Starting GithubThirdPartyApplication using Java 21.0.5 with PID 1336 (C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning\GithubThirdParty\target\classes started by m.shams in C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning)
+2024-10-29 10:26:04 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-29 10:26:04 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\m.shams\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/m.shams/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-10-29 10:26:04 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-29 10:26:04 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-29 10:26:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-29 10:26:06 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92 ms. Found 4 JPA repository interfaces.
+2024-10-29 10:26:06 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=9c37543a-f083-33ab-8f2f-de8ea404235b
+2024-10-29 10:26:07 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-10-29 10:26:07 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-29 10:26:07 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-29 10:26:07 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-29 10:26:07 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2523 ms
+2024-10-29 10:26:07 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-29 10:26:08 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6ad69c95
+2024-10-29 10:26:08 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-29 10:26:08 [restartedMain] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:oracle:thin:@172.16.60.65:1521:ORCL (Oracle 19.0)
+2024-10-29 10:26:08 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.063s)
+2024-10-29 10:26:08 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "KAR_AMOOZ": 2
+2024-10-29 10:26:08 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "KAR_AMOOZ" is up to date. No migration necessary.
+2024-10-29 10:26:08 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-29 10:26:08 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-29 10:26:08 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-29 10:26:09 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-29 10:26:10 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-29 10:26:10 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:26:11 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-29 10:26:11 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-29 10:26:11 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-29 10:26:12 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2024-10-29 10:26:12 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-29 10:26:12 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-29 10:26:12 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-29 10:26:12 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-10-29 10:26:13 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-10-29 10:26:14 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Started GithubThirdPartyApplication in 11.64 seconds (process running for 12.642)
+2024-10-29 10:26:26 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-29 10:26:26 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-29 10:26:26 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-10-29 10:26:26 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-10-29 10:26:26 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-10-29 10:26:26 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@56ef95df
+2024-10-29 10:26:26 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@254d44dc
+2024-10-29 10:26:26 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-10-29 10:26:26 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-10-29 10:26:26 [http-nio-80-exec-1] INFO  c.a.logginglib.filter.LoggingFilter - [32m<----------------------------------------JSON SERVICE CALL---------------------------------------->
+REQUEST:
+	URL: /repos/mahursh
+	HTTP METHOD: GET
+	HEADER: {
+  "sec-fetch-mode" : "navigate",
+  "sec-fetch-site" : "none",
+  "accept-language" : "en-US,en;q=0.9",
+  "sec-fetch-user" : "?1",
+  "accept" : "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "sec-ch-ua" : "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+  "sec-ch-ua-mobile" : "?0",
+  "sec-ch-ua-platform" : "\"Windows\"",
+  "host" : "localhost",
+  "upgrade-insecure-requests" : "1",
+  "connection" : "keep-alive",
+  "cache-control" : "max-age=0",
+  "accept-encoding" : "gzip, deflate, br, zstd",
+  "user-agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+  "sec-fetch-dest" : "document"
+}
+<------------------------------------------------------------------------------------------------>
+[0m
+2024-10-29 10:26:26 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/repos/mahursh?forced=true", parameters={masked}
+2024-10-29 10:26:26 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ada.githubthirdparty.controller.GitHubController#getRepos(String, String)
+2024-10-29 10:26:27 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-10-29 10:26:27 [http-nio-80-exec-1] DEBUG o.s.w.c.HttpMessageConverterExtractor - Reading to [java.util.List<java.util.Map<java.lang.String, java.lang.Object>>]
+2024-10-29 10:26:28 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-10-29 10:26:28 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.ada.githubthirdparty.model.GitRepository@5efe2aef, com.ada.githubthirdparty.model.GitRepository (truncated)...]
+2024-10-29 10:26:28 [http-nio-80-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestNotUsableException: ServletOutputStream failed to flush: java.nio.channels.ClosedChannelException]
+2024-10-29 10:26:28 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-10-29 10:26:28 [http-nio-80-exec-1] INFO  c.a.logginglib.filter.LoggingFilter - [32m<----------------------------------------JSON SERVICE END---------------------------------------->
+RESPONSE:
+	URL: /repos/mahursh
+	HTTP METHOD: GET
+	HTTP STATUS: 200
+	DURATION: 1892 ms
+<------------------------------------------------------------------------------------------------>
+[0m
+2024-10-29 10:26:28 [Thread-8] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:26:28 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-29 10:26:28 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-29 10:26:29 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Starting GithubThirdPartyApplication using Java 21.0.5 with PID 1336 (C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning\GithubThirdParty\target\classes started by m.shams in C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning)
+2024-10-29 10:26:29 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-29 10:26:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-29 10:26:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 4 JPA repository interfaces.
+2024-10-29 10:26:30 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=9c37543a-f083-33ab-8f2f-de8ea404235b
+2024-10-29 10:26:30 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-10-29 10:26:30 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-29 10:26:30 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-29 10:26:30 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-29 10:26:30 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 717 ms
+2024-10-29 10:26:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-10-29 10:26:30 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection oracle.jdbc.driver.T4CConnection@766c362a
+2024-10-29 10:26:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-10-29 10:26:30 [restartedMain] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:oracle:thin:@172.16.60.65:1521:ORCL (Oracle 19.0)
+2024-10-29 10:26:30 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.020s)
+2024-10-29 10:26:30 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "KAR_AMOOZ": 2
+2024-10-29 10:26:30 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "KAR_AMOOZ" is up to date. No migration necessary.
+2024-10-29 10:26:30 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-29 10:26:30 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-29 10:26:30 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-29 10:26:31 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-29 10:26:31 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:26:31 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-29 10:26:31 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-29 10:26:32 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2024-10-29 10:26:32 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-29 10:26:32 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-29 10:26:32 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-29 10:26:32 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-10-29 10:26:33 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-10-29 10:26:33 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-29 10:26:33 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-29 10:26:33 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-10-29 10:26:33 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-10-29 10:26:33 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-10-29 10:26:33 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@69b00160
+2024-10-29 10:26:33 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@9cd12b5
+2024-10-29 10:26:33 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-10-29 10:26:33 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-10-29 10:26:33 [http-nio-80-exec-1] INFO  c.a.logginglib.filter.LoggingFilter - [32m<----------------------------------------JSON SERVICE CALL---------------------------------------->
+REQUEST:
+	URL: /repos/mahursh
+	HTTP METHOD: GET
+	HEADER: {
+  "sec-fetch-mode" : "navigate",
+  "sec-fetch-site" : "cross-site",
+  "accept-language" : "en-US,en;q=0.9",
+  "accept" : "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "sec-ch-ua" : "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+  "sec-ch-ua-mobile" : "?0",
+  "sec-ch-ua-platform" : "\"Windows\"",
+  "host" : "localhost",
+  "upgrade-insecure-requests" : "1",
+  "connection" : "keep-alive",
+  "cache-control" : "max-age=0",
+  "accept-encoding" : "gzip, deflate, br, zstd",
+  "user-agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+  "sec-fetch-dest" : "document"
+}
+<------------------------------------------------------------------------------------------------>
+[0m
+2024-10-29 10:26:33 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/repos/mahursh?forced=true", parameters={masked}
+2024-10-29 10:26:33 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.ada.githubthirdparty.controller.GitHubController#getRepos(String, String)
+2024-10-29 10:26:33 [http-nio-80-exec-1] DEBUG o.s.w.c.HttpMessageConverterExtractor - Reading to [java.util.List<java.util.Map<java.lang.String, java.lang.Object>>]
+2024-10-29 10:26:33 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-10-29 10:26:34 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-10-29 10:26:34 [http-nio-80-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.ada.githubthirdparty.model.GitRepository@3efcf78f, com.ada.githubthirdparty.model.GitRepository (truncated)...]
+2024-10-29 10:26:34 [http-nio-80-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-10-29 10:26:34 [http-nio-80-exec-1] INFO  c.a.logginglib.filter.LoggingFilter - [32m<----------------------------------------JSON SERVICE END---------------------------------------->
+RESPONSE:
+	URL: /repos/mahursh
+	HTTP METHOD: GET
+	HTTP STATUS: 200
+	DURATION: 722 ms
+<------------------------------------------------------------------------------------------------>
+[0m
+2024-10-29 10:26:34 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Started GithubThirdPartyApplication in 5.643 seconds (process running for 32.077)
+2024-10-29 10:26:34 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-10-29 10:26:34 [Thread-12] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:26:34 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-10-29 10:26:34 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-10-29 10:26:35 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Starting GithubThirdPartyApplication using Java 21.0.5 with PID 1336 (C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning\GithubThirdParty\target\classes started by m.shams in C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning)
+2024-10-29 10:26:35 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-29 10:26:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-29 10:26:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 4 JPA repository interfaces.
+2024-10-29 10:26:35 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=9c37543a-f083-33ab-8f2f-de8ea404235b
+2024-10-29 10:26:35 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-10-29 10:26:35 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-29 10:26:35 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-29 10:26:35 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-29 10:26:35 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 564 ms
+2024-10-29 10:26:35 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2024-10-29 10:26:35 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection oracle.jdbc.driver.T4CConnection@2e20336d
+2024-10-29 10:26:35 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2024-10-29 10:26:35 [restartedMain] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:oracle:thin:@172.16.60.65:1521:ORCL (Oracle 19.0)
+2024-10-29 10:26:36 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.018s)
+2024-10-29 10:26:36 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "KAR_AMOOZ": 2
+2024-10-29 10:26:36 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "KAR_AMOOZ" is up to date. No migration necessary.
+2024-10-29 10:26:36 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-29 10:26:36 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-29 10:26:36 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-29 10:26:36 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-29 10:26:36 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:26:36 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-29 10:26:36 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-29 10:26:36 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2024-10-29 10:26:36 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-29 10:26:36 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-29 10:26:36 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-29 10:26:36 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-10-29 10:26:37 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-10-29 10:26:38 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Started GithubThirdPartyApplication in 4.207 seconds (process running for 36.44)
+2024-10-29 10:26:38 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-10-29 10:26:58 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-10-29 10:26:58 [Thread-21] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:26:58 [Thread-21] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-10-29 10:26:58 [Thread-21] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2024-10-29 10:26:59 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Starting GithubThirdPartyApplication using Java 21.0.5 with PID 1336 (C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning\GithubThirdParty\target\classes started by m.shams in C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning)
+2024-10-29 10:26:59 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-29 10:26:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-29 10:26:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+2024-10-29 10:26:59 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=9c37543a-f083-33ab-8f2f-de8ea404235b
+2024-10-29 10:26:59 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-10-29 10:26:59 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-29 10:26:59 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-29 10:27:00 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-29 10:27:00 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 769 ms
+2024-10-29 10:27:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2024-10-29 10:27:00 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection oracle.jdbc.driver.T4CConnection@5f72898b
+2024-10-29 10:27:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2024-10-29 10:27:00 [restartedMain] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:oracle:thin:@172.16.60.65:1521:ORCL (Oracle 19.0)
+2024-10-29 10:27:00 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.018s)
+2024-10-29 10:27:00 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "KAR_AMOOZ": 2
+2024-10-29 10:27:00 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "KAR_AMOOZ" is up to date. No migration necessary.
+2024-10-29 10:27:00 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-29 10:27:00 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-29 10:27:00 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-29 10:27:00 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-29 10:27:00 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:27:00 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-29 10:27:00 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-29 10:27:00 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2024-10-29 10:27:00 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-29 10:27:00 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-29 10:27:00 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-29 10:27:00 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-10-29 10:27:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-10-29 10:27:02 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-10-29 10:27:02 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Started GithubThirdPartyApplication in 4.449 seconds (process running for 60.691)
+2024-10-29 10:27:02 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-10-29 10:27:02 [Thread-29] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:27:02 [Thread-29] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2024-10-29 10:27:02 [Thread-29] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2024-10-29 10:27:03 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Starting GithubThirdPartyApplication using Java 21.0.5 with PID 1336 (C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning\GithubThirdParty\target\classes started by m.shams in C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning)
+2024-10-29 10:27:03 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-29 10:27:04 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-29 10:27:04 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 4 JPA repository interfaces.
+2024-10-29 10:27:04 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=9c37543a-f083-33ab-8f2f-de8ea404235b
+2024-10-29 10:27:04 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-10-29 10:27:04 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-29 10:27:04 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-29 10:27:04 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-29 10:27:04 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 515 ms
+2024-10-29 10:27:04 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2024-10-29 10:27:04 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection oracle.jdbc.driver.T4CConnection@bd5fca7
+2024-10-29 10:27:04 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2024-10-29 10:27:04 [restartedMain] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:oracle:thin:@172.16.60.65:1521:ORCL (Oracle 19.0)
+2024-10-29 10:27:04 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.021s)
+2024-10-29 10:27:04 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "KAR_AMOOZ": 2
+2024-10-29 10:27:04 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "KAR_AMOOZ" is up to date. No migration necessary.
+2024-10-29 10:27:04 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-29 10:27:04 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-29 10:27:04 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-29 10:27:05 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-29 10:27:05 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:27:05 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-29 10:27:05 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-29 10:27:05 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2024-10-29 10:27:05 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-29 10:27:05 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-29 10:27:05 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-29 10:27:05 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-10-29 10:27:06 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-10-29 10:27:07 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Started GithubThirdPartyApplication in 4.218 seconds (process running for 65.041)
+2024-10-29 10:27:07 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-10-29 10:27:30 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-10-29 10:27:30 [Thread-36] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:27:30 [Thread-36] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2024-10-29 10:27:30 [Thread-36] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2024-10-29 10:27:31 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Starting GithubThirdPartyApplication using Java 21.0.5 with PID 1336 (C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning\GithubThirdParty\target\classes started by m.shams in C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning)
+2024-10-29 10:27:31 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-29 10:27:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-29 10:27:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+2024-10-29 10:27:32 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=12bcb112-5de0-381b-8980-f7360e81b273
+2024-10-29 10:27:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-10-29 10:27:32 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-29 10:27:32 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-29 10:27:32 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-29 10:27:32 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 588 ms
+2024-10-29 10:27:32 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2024-10-29 10:27:32 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection oracle.jdbc.driver.T4CConnection@74022e03
+2024-10-29 10:27:32 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2024-10-29 10:27:32 [restartedMain] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:oracle:thin:@172.16.60.65:1521:ORCL (Oracle 19.0)
+2024-10-29 10:27:32 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.019s)
+2024-10-29 10:27:32 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "KAR_AMOOZ": 2
+2024-10-29 10:27:32 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "KAR_AMOOZ" is up to date. No migration necessary.
+2024-10-29 10:27:32 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-29 10:27:32 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-29 10:27:32 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-29 10:27:32 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-29 10:27:32 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:27:32 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-29 10:27:32 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-29 10:27:33 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2024-10-29 10:27:33 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-29 10:27:33 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-29 10:27:33 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-29 10:27:33 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-10-29 10:27:34 [restartedMain] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-10-29 10:27:34 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-10-29 10:27:34 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-10-29 10:27:35 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Started GithubThirdPartyApplication in 4.97 seconds (process running for 93.428)
+2024-10-29 10:27:35 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-10-29 10:27:35 [Thread-43] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:27:35 [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2024-10-29 10:27:35 [Thread-43] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2024-10-29 10:27:36 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Starting GithubThirdPartyApplication using Java 21.0.5 with PID 1336 (C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning\GithubThirdParty\target\classes started by m.shams in C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning)
+2024-10-29 10:27:36 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-29 10:27:37 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-29 10:27:37 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 4 JPA repository interfaces.
+2024-10-29 10:27:37 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=9c37543a-f083-33ab-8f2f-de8ea404235b
+2024-10-29 10:27:37 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 80 (http)
+2024-10-29 10:27:37 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-29 10:27:37 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-29 10:27:37 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-29 10:27:37 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 614 ms
+2024-10-29 10:27:37 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2024-10-29 10:27:37 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection oracle.jdbc.driver.T4CConnection@2dc073f
+2024-10-29 10:27:37 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2024-10-29 10:27:37 [restartedMain] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:oracle:thin:@172.16.60.65:1521:ORCL (Oracle 19.0)
+2024-10-29 10:27:37 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.020s)
+2024-10-29 10:27:37 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "KAR_AMOOZ": 2
+2024-10-29 10:27:37 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "KAR_AMOOZ" is up to date. No migration necessary.
+2024-10-29 10:27:37 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-29 10:27:37 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-29 10:27:37 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-29 10:27:38 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-29 10:27:38 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:27:38 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-29 10:27:38 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-29 10:27:38 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2024-10-29 10:27:38 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-29 10:27:38 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-29 10:27:38 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-29 10:27:38 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-10-29 10:27:40 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 80 (http) with context path '/'
+2024-10-29 10:27:41 [restartedMain] INFO  c.a.g.GithubThirdPartyApplication - Started GithubThirdPartyApplication in 5.478 seconds (process running for 99.224)
+2024-10-29 10:27:41 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-10-29 10:49:47 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-10-29 10:49:47 [Thread-50] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29 10:49:47 [Thread-50] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2024-10-29 10:49:47 [Thread-50] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
