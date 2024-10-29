@@ -67,3 +67,6 @@ Breakdown of the Command:
 --name github-third-party-app: Assigns a name to your running container.
 -p 8080:8080: Maps port 8080 on your local machine to port 8080 on the container (adjust these as necessary based on your app's port).
 github-third-party: Specifies the name of the image to run.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+#mvn install:install-file -Dfile=C:\Users\m.shams\AppData\Local\Temp\2\FeignLearning\GithubThirdParty\src\main\resources\META-INF\lib\loggingLib.jar -DgroupId=com.ada -DartifactId=loggingLib -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar

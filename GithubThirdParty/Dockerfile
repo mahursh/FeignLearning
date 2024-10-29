@@ -14,11 +14,10 @@ RUN mvn dependency:resolve
 
 
 COPY src ./src
-COPY src/main/resources/META-INF/lib/loggingLib.jar /app/lib
+#COPY src/main/resources/META-INF/lib/loggingLib.jar /app/lib
 
 RUN mvn clean package -DskipTests
 
-#mvn install:install-file -Dfile=src/main/resources/META-INF/lib/loggingLib.jar -DgroupId=com.ada -DartifactId=loggingLib -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar
 
 
 
@@ -28,7 +27,7 @@ FROM eclipse-temurin:17-jre
 WORKDIR /app
 
 
-COPY --from=build /app/target/GithubThirdParty-0.0.1-SNAPSHOT.jar app.jar
+#COPY --from=build /app/target/GithubThirdParty-0.0.1-SNAPSHOT.jar app.jar
 COPY --from=build /app/lib/loggingLib.jar /app/lib
 #COPY --from=build /app/lib/ojdbc11-21.9.0.0.jar /app/lib/
 
