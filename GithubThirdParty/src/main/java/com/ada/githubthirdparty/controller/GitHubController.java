@@ -17,14 +17,13 @@ import java.util.List;
 @RestController
 public class GitHubController {
 
-    private final GitHubRepoService repoService;
+
     private final GitHubUserService userService;
     private final JoiningService joiningService;
 
 
 
-    public GitHubController(GitHubRepoService repoService, GitHubUserService userService, JoiningService joiningService) {
-        this.repoService = repoService;
+    public GitHubController( GitHubUserService userService, JoiningService joiningService) {
         this.userService = userService;
         this.joiningService = joiningService;
 
@@ -42,6 +41,7 @@ public class GitHubController {
         }
         List<GitRepository> repos = joiningService.findReposByUsername(username);
         System.out.println("from database ");
+
 
         return ResponseEntity.ok(repos);
 

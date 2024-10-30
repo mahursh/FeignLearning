@@ -5,13 +5,13 @@ import com.ada.logginglib.filter.LoggingFilter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.DependsOn;
+
 
 @Configuration
 public class LoggingConfig {
 
-//    @DependsOn
-    @Bean("")
+
+    @Bean
     public LoggingFilter loggingFilter(ObjectMapper objectMapper) {
         LoggingFilter loggingFilter = new LoggingFilter(objectMapper);
 
