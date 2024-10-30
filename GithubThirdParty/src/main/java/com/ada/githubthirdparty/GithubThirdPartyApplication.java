@@ -8,7 +8,6 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableFeignClients
-
 public class GithubThirdPartyApplication {
 
     public static void main(String[] args) {
