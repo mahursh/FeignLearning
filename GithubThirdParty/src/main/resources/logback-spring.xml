@@ -1,3 +1,0 @@
-<!--<logger name="org.zalando.logbook" level="INFO" additivity="false">-->
-<!--    <appender-ref ref="RollingFile"/>-->
-<!--</logger>-->

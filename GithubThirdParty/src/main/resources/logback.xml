@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+    <springProperty scope="context" name="application_name" source="spring.application.name"/>
+
+
+<!--    <property name="STE_EXCLUSIONS" value="\$\$FastClassByCGLIB\$\$,\$\$EnhancerBySpringCGLIB\$\$,^sun\.reflect\..*\.invoke,^com\.sun\.,^sun\.net\.,^net\.sf\.cglib\.proxy\.MethodProxy\.invoke,^org\.springframework\.cglib\.,^org\.springframework\.transaction\.,^org\.springframework\.validation\.,^org\.springframework\.app\.,^org\.springframework\.aop\.,^java\.lang\.reflect\.Method\.invoke,^org\.springframework\.ws\..*\.invoke,^org\.springframework\.ws\.transport\.,^org\.springframework\.ws\.soap\.saaj\.SaajSoapMessage\.,^org\.springframework\.ws\.client\.core\.WebServiceTemplate\.,^org\.springframework\.web\.filter\.,^org\.apache\.tomcat\.,^org\.apache\.catalina\.,^org\.apache\.coyote\.,^java\.util\.concurrent\.ThreadPoolExecutor\.runWorker,^java\.lang\.Thread\.run$"/>-->
+
+    <!-- Log configuration for Docker profile -->
+    <springProfile name="docker">
+
+        <appender name="jsonConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+            <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+                <providers>
+                    <timestamp>
+                        <timeZone>UTC</timeZone>
+                    </timestamp>
+                    <context/>
+                    <logLevel/>
+                    <loggerName/>
+                    <threadName/>
+                    <message/>
+                    <pattern>
+                        <omitEmptyFields>true</omitEmptyFields>
+                        <pattern>
+                            {
+                            "service_id": "${build.group}.${build.name}",
+                            "service_version": "${build.version}",
+                            "trace": {
+                            "trace_id": "%mdc{trace_id}",
+                            "span_id": "%mdc{X-B3-SpanId}",
+                            "parent_span_id": "%mdc{X-B3-ParentSpanId}"
+                            }
+                            }
+                        </pattern>
+                    </pattern>
+                    <mdc>
+                        <excludeMdcKeyName>traceId</excludeMdcKeyName>
+                        <excludeMdcKeyName>spanId</excludeMdcKeyName>
+                    </mdc>
+                    <stackTrace>
+                        <throwableConverter class="net.logstash.logback.stacktrace.ShortenedThrowableConverter">
+                            <inlineHash>true</inlineHash>
+                            <exclusions>${STE_EXCLUSIONS}</exclusions>
+                            <rootCauseFirst>true</rootCauseFirst>
+                        </throwableConverter>
+                    </stackTrace>
+                    <stackHash>
+                        <exclusions>${STE_EXCLUSIONS}</exclusions>
+                    </stackHash>
+                </providers>
+            </encoder>
+        </appender>
+
+        <appender name="logbookAppender" class="ch.qos.logback.core.ConsoleAppender">
+            <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+                <providers>
+                    <timestamp>
+                        <timeZone>UTC</timeZone>
+                    </timestamp>
+                    <context/>
+                    <logLevel/>
+                    <loggerName/>
+                    <threadName/>
+                    <pattern>
+                        <omitEmptyFields>true</omitEmptyFields>
+                        <pattern>
+                            {
+                            "service_id": "${build.group}.${build.name}",
+                            "service_version": "${build.version}",
+                            "trace": {
+                            "trace_id": "%mdc{trace_id}",
+                            "span_id": "%mdc{X-B3-SpanId}",
+                            "parent_span_id": "%mdc{X-B3-ParentSpanId}"
+                            }
+                            }
+                        </pattern>
+                    </pattern>
+                    <mdc>
+                        <excludeMdcKeyName>traceId</excludeMdcKeyName>
+                        <excludeMdcKeyName>spanId</excludeMdcKeyName>
+                    </mdc>
+                </providers>
+            </encoder>
+        </appender>
+
+
+        <root level="INFO">
+            <appender-ref ref="jsonConsoleAppender"/>
+        </root>
+
+        <logger name="org.zalando.logbook.Logbook" additivity="false" level="trace">
+            <appender-ref ref="logbookAppender"/>
+        </logger>
+
+
+    </springProfile>
+
+
+    <!-- Log configuration for non-Docker profile -->
+    <springProfile name="!docker">
+
+        <appender name="flatConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+            <encoder>
+                <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+                <charset>UTF8</charset>
+            </encoder>
+        </appender>
+
+        <root level="INFO">
+            <appender-ref ref="flatConsoleAppender"/>
+        </root>
+
+    </springProfile>
+
+</configuration>

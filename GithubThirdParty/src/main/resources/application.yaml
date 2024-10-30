@@ -2,6 +2,13 @@ spring:
   application:
     name: GithubThirdParty
 
+
+
+  profiles:
+    active: docker
+
+
+
   datasource:
     driver-class-name: oracle.jdbc.OracleDriver
     url: jdbc:oracle:thin:@172.16.60.65:1521:ORCL
@@ -20,6 +27,27 @@ spring:
 server:
   port: 80
 
+
+
+logging:
+  level:
+    root: info
+    org.springframework.web: info
+    org.zalando.logbook: trace
+
+
+logbook:
+  filter.enabled: true
+  secure-filter.enabled: true
+  format.style: json
+  strategy: default
+  obfuscate:
+    headers:
+      - Authorization
+      - X-Secret
+    parameters:
+      - access_token
+      - password
 
 #+++++++++++++++++++++++++++++++++++++++++
 
@@ -46,4 +74,10 @@ server:
 #      zalando:
 #        logbook:
 #          Logbook: trace
+
+
+
+
+
+
 

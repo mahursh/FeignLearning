@@ -32,6 +32,8 @@ COPY --from=build /app/lib/loggingLib.jar /app/lib
 #COPY --from=build /app/lib/ojdbc11-21.9.0.0.jar /app/lib/
 
 
+ENV SPRING_PROFILES_ACTIVE=docker
+
 EXPOSE 80
 
 
