@@ -5,7 +5,7 @@ spring:
 
 
   profiles:
-    active: docker
+    active: dev
 
 
 
@@ -36,18 +36,33 @@ logging:
     org.zalando.logbook: trace
 
 
+
 logbook:
-  filter.enabled: true
-  secure-filter.enabled: true
-  format.style: json
-  strategy: default
   obfuscate:
-    headers:
-      - Authorization
-      - X-Secret
-    parameters:
-      - access_token
-      - password
+    headers: [Authorization, Cookie] # Mask specific headers
+    parameters: [password, ssn]      # Mask sensitive parameters in URLs
+#  exclude:
+#    request: ["/health", "/actuator/**"] # Specify endpoints to exclude if needed
+#    response: ["/health", "/actuator/**"]
+  format:
+    style: json
+
+
+
+
+#+++++++++++++++++++++++++++++++++++++++
+#logbook:
+#  filter.enabled: true
+#  secure-filter.enabled: true
+#  format.style: json
+#  strategy: default
+#  obfuscate:
+#    headers:
+#      - Authorization
+#      - X-Secret
+#    parameters:
+#      - access_token
+#      - password
 
 #+++++++++++++++++++++++++++++++++++++++++
 
