@@ -1,24 +1,24 @@
-package com.ada.githubthirdparty.config;
+//package com.ada.githubthirdparty.config;
 
-import com.ada.githubthirdparty.customes.CustomSink;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.zalando.logbook.Logbook;
-
-
-
-@Configuration
-public class LogbookConfig {
+//import com.ada.githubthirdparty.customes.CustomSink;
+//import org.springframework.context.annotation.Bean;
+//import org.springframework.context.annotation.Configuration;
+//import org.zalando.logbook.Logbook;
+//
 
 
+//@Configuration
+//public class LogbookConfig {
 
 
-    @Bean
-    public Logbook logbook() {
-        return Logbook.builder()
-                .sink(new CustomSink())
-                .build();
-    }
+
+
+//    @Bean
+//    public Logbook logbook() {
+//        return Logbook.builder()
+//                .sink(new CustomSink())
+//                .build();
+//    }
 
 
 
@@ -73,6 +73,6 @@ public class LogbookConfig {
 //    }
 
 
-}
+//}
 
 

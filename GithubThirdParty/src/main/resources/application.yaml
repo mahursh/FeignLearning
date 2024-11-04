@@ -29,23 +29,23 @@ server:
 
 
 
-logging:
-  level:
-    root: info
-    org.springframework.web: info
-    org.zalando.logbook: trace
+#logging:
+#  level:
+#    root: info
+#    org.springframework.web: info
+#    org.zalando.logbook: trace
 
 
-
-logbook:
-  obfuscate:
-    headers: [Authorization, Cookie] # Mask specific headers
-    parameters: [password, ssn]      # Mask sensitive parameters in URLs
-#  exclude:
-#    request: ["/health", "/actuator/**"] # Specify endpoints to exclude if needed
-#    response: ["/health", "/actuator/**"]
-  format:
-    style: json
+#
+#logbook:
+#  obfuscate:
+#    headers: [Authorization, Cookie] # Mask specific headers
+#    parameters: [password, ssn]      # Mask sensitive parameters in URLs
+##  exclude:
+##    request: ["/health", "/actuator/**"] # Specify endpoints to exclude if needed
+##    response: ["/health", "/actuator/**"]
+#  format:
+#    style: json
 
 
 
