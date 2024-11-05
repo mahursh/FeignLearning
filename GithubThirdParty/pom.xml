@@ -31,7 +31,6 @@
         <java.version>17</java.version>
         <okhttp3.version>4.9.3</okhttp3.version>
         <spring-cloud.version>2023.0.3</spring-cloud.version>
-        <!--        <logbook.version>2.14.0</logbook.version>-->
         <logstash-logback-encoder.version>7.0.1</logstash-logback-encoder.version>
     </properties>
     <dependencies>
@@ -91,36 +90,18 @@
         </dependency>
 
 
-        <!--        <dependency>-->
-        <!--            <groupId>org.zalando</groupId>-->
-        <!--            <artifactId>logbook-core</artifactId>-->
-        <!--            <version>3.9.0</version>-->
-        <!--        </dependency>-->
-
-
-<!--        <dependency>-->
-<!--            <groupId>org.zalando</groupId>-->
-<!--            <artifactId>logbook-spring-boot-starter</artifactId>-->
-<!--            <version>3.9.0</version>-->
-<!--        </dependency>-->
-
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>okhttp</artifactId>
             <version>${okhttp3.version}</version>
         </dependency>
 
-        <!--        <dependency>-->
-        <!--            <groupId>org.zalando</groupId>-->
-        <!--            <artifactId>logbook-spring-boot-starter</artifactId>-->
-        <!--            <version>${logbook.version}</version>-->
-        <!--        </dependency>-->
 
-<!--        <dependency>-->
-<!--            <groupId>net.logstash.logback</groupId>-->
-<!--            <artifactId>logstash-logback-encoder</artifactId>-->
-<!--            <version>${logstash-logback-encoder.version}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+            <version>${logstash-logback-encoder.version}</version>
+        </dependency>
 
 
     </dependencies>

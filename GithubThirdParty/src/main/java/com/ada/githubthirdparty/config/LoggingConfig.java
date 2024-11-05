@@ -18,7 +18,7 @@ public class LoggingConfig {
     public LoggingFilter loggingFilter(ObjectMapper objectMapper) {
         LoggingFilter loggingFilter = new LoggingFilter(objectMapper);
 
-        loggingFilter.setIgnoredPaths(Set.of("/health", "/info", "/userInfo/.*"));
+        loggingFilter.setIgnoredPaths(Set.of("/userInfo/.*"));
 
 //        loggingFilter.setExcludedBodyPaths(Set.of("/login", "/register"));
 
