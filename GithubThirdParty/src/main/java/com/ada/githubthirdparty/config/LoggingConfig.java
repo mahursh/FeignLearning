@@ -20,13 +20,15 @@ public class LoggingConfig {
 
         loggingFilter.setIgnoredPaths(Set.of("/health", "/info", "/userInfo/.*"));
 
-        loggingFilter.setExcludedBodyPaths(Set.of("/login", "/register"));
+//        loggingFilter.setExcludedBodyPaths(Set.of("/login", "/register"));
 
         loggingFilter.setLogFormat("JSON");
 
         loggingFilter.setMaskingRules(Map.of(
-                "(?i)url", "*****",
-                "(?i)creditCard", "####-####-####"
+                "METHOD", "*****",
+                "creditCard", "####",
+                "(?i)UrL", "#####",
+                "STATUS\\d+", "****"
         ));
 
         return loggingFilter;
