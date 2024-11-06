@@ -8,13 +8,14 @@ WORKDIR /app
 COPY pom.xml .
 
 #COPY src/main/resources/META-INF/lib/ojdbc11-21.9.0.0.jar /app/lib/
+COPY src/main/resources/META-INF/lib/loggingLib.jar /app/lib
 
 RUN mvn dependency:go-offline
 RUN mvn dependency:resolve
 
 
 COPY src ./src
-#COPY src/main/resources/META-INF/lib/loggingLib.jar /app/lib
+
 
 RUN mvn clean package -DskipTests
 
