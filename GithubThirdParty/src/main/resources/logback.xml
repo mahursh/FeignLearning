@@ -2,7 +2,7 @@
 <configuration>
 
     <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
-<!--    <property resource="META-INF/build-info.properties"/>-->
+    <property resource="META-INF/build-info.properties"/>
 
 
     <springProperty scope="context" name="application_name" source="spring.application.name"/>
