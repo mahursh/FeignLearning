@@ -54,7 +54,9 @@
             </encoder>
         </appender>
 
-
+        <root level="INFO">
+            <appender-ref ref="jsonConsoleAppender" />
+        </root>
 
 
 
