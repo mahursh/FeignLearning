@@ -34,6 +34,15 @@
         <logstash-logback-encoder.version>7.0.1</logstash-logback-encoder.version>
     </properties>
     <dependencies>
+
+        <dependency>
+            <groupId>com.ada</groupId>
+            <artifactId>loggingLib</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/META-INF/lib/loggingLib.jar</systemPath>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -105,13 +114,6 @@
             <version>${logstash-logback-encoder.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.ada</groupId>
-            <artifactId>logginglib</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/META-INF/lib/loggingLib.jar</systemPath>
-        </dependency>
 
     </dependencies>
     <dependencyManagement>
