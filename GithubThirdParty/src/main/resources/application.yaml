@@ -24,8 +24,22 @@ spring:
     locations: classpath:db/migration
 #    out-of-order: true
 
+#logginglib:
+#  ignored-paths:
+#    - /health
+#    - /status
+#  excluded-body-paths:
+#    - /login
+#    - /register
+#  log-format: ISO
+
+
+
 server:
   port: 80
+
+
+
 
 
 
