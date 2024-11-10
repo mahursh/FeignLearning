@@ -14,7 +14,9 @@
     <springProfile name="docker">
 
         <appender name="jsonConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+
             <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+
                 <providers >
                     <timestamp>
                         <timeZone>UTC</timeZone>
@@ -49,6 +51,7 @@
                         <excludeMdcKeyName>X-B3-ParentSpanId</excludeMdcKeyName>
                         <excludeMdcKeyName>X-Span-Export</excludeMdcKeyName>
                     </mdc>
+
                     <stackTrace/>
                 </providers>
             </encoder>
