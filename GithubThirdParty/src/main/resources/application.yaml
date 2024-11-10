@@ -8,7 +8,6 @@ spring:
     active: docker
 
 
-
   datasource:
     driver-class-name: oracle.jdbc.OracleDriver
     url: jdbc:oracle:thin:@172.16.60.65:1521:ORCL
@@ -24,14 +23,14 @@ spring:
     locations: classpath:db/migration
 #    out-of-order: true
 
-#logginglib:
-#  ignored-paths:
-#    - /health
-#    - /status
-#  excluded-body-paths:
-#    - /login
-#    - /register
-#  log-format: ISO
+#  logginglib:
+#    ignored-paths:
+#      - /health
+#      - /status
+#    excluded-body-paths:
+#      - /login
+#      - /register
+#    log-format: JSON
 
 
 
