@@ -2,11 +2,8 @@ spring:
   application:
     name: GithubThirdParty
 
-
-
   profiles:
-    active: docker
-
+    active: dev
 
   datasource:
     driver-class-name: oracle.jdbc.OracleDriver
@@ -23,15 +20,6 @@ spring:
     locations: classpath:db/migration
 #    out-of-order: true
 
-#  logginglib:
-#    ignored-paths:
-#      - /health
-#      - /status
-#    excluded-body-paths:
-#      - /login
-#      - /register
-#    log-format: JSON
-
 
 
 server:
@@ -42,66 +30,6 @@ server:
 
 
 
-#logging:
-#  level:
-#    root: info
-#    org.springframework.web: info
-#    org.zalando.logbook: trace
-
-
-#
-#logbook:
-#  obfuscate:
-#    headers: [Authorization, Cookie] # Mask specific headers
-#    parameters: [password, ssn]      # Mask sensitive parameters in URLs
-##  exclude:
-##    request: ["/health", "/actuator/**"] # Specify endpoints to exclude if needed
-##    response: ["/health", "/actuator/**"]
-#  format:
-#    style: json
-
-
-
-
-#+++++++++++++++++++++++++++++++++++++++
-#logbook:
-#  filter.enabled: true
-#  secure-filter.enabled: true
-#  format.style: json
-#  strategy: default
-#  obfuscate:
-#    headers:
-#      - Authorization
-#      - X-Secret
-#    parameters:
-#      - access_token
-#      - password
-
-#+++++++++++++++++++++++++++++++++++++++++
-
-#logging:
-#  level:
-#    root: info
-#    org:
-#      springframework:
-#        web: debug
-#
-#  file:
-#    name: logs/application.log
-
-#  pattern:
-#    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
-#    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
-
-
-#+++++++++++++++++++++++++++++++++++++++++
-#
-#logging:
-#  level:
-#    org:
-#      zalando:
-#        logbook:
-#          Logbook: trace
 
 
 

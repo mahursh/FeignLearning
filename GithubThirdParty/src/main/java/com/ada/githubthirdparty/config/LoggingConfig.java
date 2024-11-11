@@ -13,7 +13,6 @@ import java.util.Set;
 @Configuration
 public class LoggingConfig {
 
-
     @Bean
     public LoggingFilter loggingFilter(ObjectMapper objectMapper) {
         LoggingFilter loggingFilter = new LoggingFilter(objectMapper);
