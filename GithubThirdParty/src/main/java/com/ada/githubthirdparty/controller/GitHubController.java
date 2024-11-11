@@ -35,12 +35,10 @@ public class GitHubController {
         if (forced != null) {
 
             List<GitRepository> repos = joiningService.save(username);
-            System.out.println("forced ");
 
             return ResponseEntity.ok(repos);
         }
         List<GitRepository> repos = joiningService.findReposByUsername(username);
-        System.out.println("from database ");
 
 
         return ResponseEntity.ok(repos);
