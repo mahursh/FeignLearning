@@ -14,7 +14,15 @@
 
         <appender name="CUSTOM_APPENDER" class="ch.qos.logback.core.ConsoleAppender">
             <encoder class="com.ada.logginglib.encoder.CustomLoggingEncoder">
-                <pattern>timestamp,level,message,url,method</pattern>
+                <pattern>{
+                    timestamp,
+                    level,
+                    logger,
+                    message,
+                    method,
+                    url,
+                    header
+                }</pattern>
             </encoder>
         </appender>
 
